@@ -1,0 +1,76 @@
+
+body{
+
+  background-color: gray;
+}
+
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+  
+}
+h1 {
+  margin-bottom: 10px;
+}
+h1.titulo { text-align: center; }
+
+p {
+  border: 1px solid black;
+  background-color: brown; /*color*/
+  width: 80%;/* ancho cuadro*/
+  height: 200px;/*altura*/
+  margin-right: auto;
+  margin-left: auto;
+  font-family: arial;
+  color: white;
+  text-align: center;
+  overflow: auto;/* se encuadra el texto dentro del cuadro*/
+  font-size: 15px;/*tamaño de letra. si lo cambias a ,as de 20px aparece el overfolow*/
+} 
+
+/* Simple Responsive Framework. */
+.filas/*fila*/{
+  width: 100%;/*ancho*/
+  overflow: hidden;
+
+}
+
+@media (min-width: 992px)/*margen minimo*/ {
+  .cuadro1, .cuadro2, .cuadro3{
+    float: left;
+    /*border: 1px solid green;*/
+  }
+  .cuadro1 {
+    width: 33.33%;
+  }
+  .cuadro2 {
+    width: 33.33%;
+  }
+  .cuadro3{
+    width: 33.33%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .colum1, .colum2, .colum3 {
+    float: left;
+    /*border: 2px solid green;*/
+  }
+  .colum1 {
+    width: 50%;
+  }
+  .colum2 {
+    width: 50%;
+  }
+  .colum3 {
+    width: 100%;
+
+  }
+  
+}
