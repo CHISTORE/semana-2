@@ -1,12 +1,11 @@
 
-body{
-
+body {
   background-color: gray;
 }
 
 
 
-}
+
 
 
 * {
@@ -57,7 +56,7 @@ p {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px){
   .colum1, .colum2, .colum3 {
     float: left;
     /*border: 2px solid green;*/
@@ -70,7 +69,6 @@ p {
   }
   .colum3 {
     width: 100%;
-
   }
   
 }
